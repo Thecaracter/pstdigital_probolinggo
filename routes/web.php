@@ -33,7 +33,10 @@ Route::group(['middleware' => 'isLogin'], function () {
     //konsultasi route
     Route::get('/konsultasi', [KonsultasiVirtualController::class, 'index'])->name('konsultasi.index');
     Route::delete('/konsultasi/{id}', [KonsultasiVirtualController::class, 'destroy'])->name('konsultasi.destroy');
+
+    //logout route
     Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 });
 
-//logout route
+
+

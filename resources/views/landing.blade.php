@@ -37,7 +37,8 @@
                             <h5 class="text-white text-uppercase mb-3 animated slideInDown">PST DIGITAL</h5>
                             <h1 class="display-1 text-white mb-md-4 animated zoomIn">Badan Pusat Statistik Probolinggo
                             </h1>
-                            <a href="quote.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Chat
+                            <a href="https://wa.me/08883662780?text=nama saya rizqi"
+                                class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Chat
                                 Me</a>
                             <a href="" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Konsultasi
                                 Virtual</a>
@@ -51,7 +52,8 @@
                             <h5 class="text-white text-uppercase mb-3 animated slideInDown">PST DIGITAL</h5>
                             <h1 class="display-1 text-white mb-md-4 animated zoomIn">Badan Pusat Statistik Probolinggo
                             </h1>
-                            <a href="quote.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Chat
+                            <a href="https://wa.me/+628883662780?text=nama saya rizqi"
+                                class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Chat
                                 Me</a>
                             <a href="" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Konsultasi
                                 Virtual</a>
