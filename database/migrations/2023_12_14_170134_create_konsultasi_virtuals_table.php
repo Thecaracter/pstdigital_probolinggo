@@ -14,7 +14,7 @@ return new class extends Migration {
             $table->id();
             $table->string('nama');
             $table->string('email');
-            $table->string('no_telp');
+            $table->string('no_telp', 20);
             $table->timestamps();
         });
     }
@@ -24,6 +24,6 @@ return new class extends Migration {
      */
     public function down(): void
     {
-        Schema::dropIfExists('konsultasi_virtual');
+        Schema::dropIfExists('konsultasi_virtuals');
     }
 };
