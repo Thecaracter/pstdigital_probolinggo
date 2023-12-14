@@ -12,10 +12,6 @@
                             <h4 class="card-title">Data Konsultasi</h4>
 
                             <div class="align-right text-right">
-
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#createModal">
-                                    Tambah Pengguna
-                                </button>
                             </div>
                             <br>
                             <div class="search-element">
