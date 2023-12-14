@@ -26,7 +26,7 @@ Route::get('/', function () {
 Route::get('/masuk', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/masuk', [LoginController::class, 'login']);
 
-Route::group(['middleware' => 'isLogin'], function () {
+Route::group(['middleware' => 'IsLogin'], function () {
     //dashboard route
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard.index');
 
