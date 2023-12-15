@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FormKonsultasiController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\DashboardController;
@@ -22,9 +23,15 @@ use App\Http\Controllers\KonsultasiVirtualController;
 Route::get('/', function () {
     return view('landing');
 });
+Route::get('/formkonsultasi', function () {
+    return view('form.form_konsultasi');
+});
 //login route
 Route::get('/masuk', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/masuk', [LoginController::class, 'login']);
+
+//form konsultasi route
+Route::post('/formkonsultasi', [FormKonsultasiController::class, 'store'])->name('konsultasi.store');
 
 Route::group(['middleware' => 'IsLogin'], function () {
 
@@ -34,6 +41,7 @@ Route::group(['middleware' => 'IsLogin'], function () {
     //konsultasi route
     Route::get('/konsultasi', [KonsultasiVirtualController::class, 'index'])->name('konsultasi.index');
     Route::delete('/konsultasi/{id}', [KonsultasiVirtualController::class, 'destroy'])->name('konsultasi.destroy');
+
 
     //logout route
     Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
