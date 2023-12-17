@@ -31,6 +31,8 @@
 
     <!-- Template Stylesheet -->
     <link href="landing/css/style.css" rel="stylesheet">
+    <!--sweetalert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>

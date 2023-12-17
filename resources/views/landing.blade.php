@@ -40,9 +40,29 @@
                             <a href="https://wa.me/+628883662780?text=Permisi admin,apakah saya bisa berkonsultasi dengan anda melalui wa"
                                 class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Chat
                                 Me</a>
-                            <a href="/formkonsultasi"
-                                class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Konsultasi
-                                Virtual</a>
+                            @if ($jumlahDataHariIni > 5)
+                                <a href="#" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight"
+                                    onclick="handleKonsultasiClick()">
+                                    Konsultasi Virtual
+                                </a>
+                                <script>
+                                    function handleKonsultasiClick() {
+                                        // Tampilkan SweetAlert
+                                        Swal.fire({
+                                            icon: 'info',
+                                            title: 'Pemberitahuan',
+                                            text: 'Mohon maaf, daftar tunggu untuk konsultasi virtual telah penuh.',
+                                            showConfirmButton: false,
+                                            timer: 3000 // Tampilkan selama 3 detik
+                                        });
+                                    }
+                                </script>
+                            @else
+                                <a href="/formkonsultasi"
+                                    class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">
+                                    Konsultasi Virtual
+                                </a>
+                            @endif
                         </div>
                     </div>
                 </div>
@@ -50,15 +70,36 @@
                     <img class="w-100" src="landing/img/carousel-2.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">PST DIGITAL</h5>
+                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">PST DIGITAL
+                            </h5>
                             <h1 class="display-1 text-white mb-md-4 animated zoomIn">Badan Pusat Statistik Probolinggo
                             </h1>
                             <a href="https://wa.me/+628883662780?text=nama saya rizqi"
                                 class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Chat
                                 Me</a>
-                            <a href="/formkonsultasi"
-                                class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Konsultasi
-                                Virtual</a>
+                            @if ($jumlahDataHariIni > 5)
+                                <a href="#" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight"
+                                    onclick="handleKonsultasiClick()">
+                                    Konsultasi Virtual
+                                </a>
+                                <script>
+                                    function handleKonsultasiClick() {
+                                        // Tampilkan SweetAlert
+                                        Swal.fire({
+                                            icon: 'info',
+                                            title: 'Pemberitahuan',
+                                            text: 'Mohon maaf, daftar tunggu untuk konsultasi virtual telah penuh.',
+                                            showConfirmButton: false,
+                                            timer: 3000 // Tampilkan selama 3 detik
+                                        });
+                                    }
+                                </script>
+                            @else
+                                <a href="/formkonsultasi"
+                                    class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">
+                                    Konsultasi Virtual
+                                </a>
+                            @endif
                         </div>
                     </div>
                 </div>

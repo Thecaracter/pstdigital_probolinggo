@@ -1,9 +1,10 @@
 <?php
 
-use App\Http\Controllers\FormKonsultasiController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\LandingController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\FormKonsultasiController;
 use App\Http\Controllers\KonsultasiVirtualController;
 
 /*
@@ -18,11 +19,7 @@ use App\Http\Controllers\KonsultasiVirtualController;
 */
 
 //Powered by Rizqi Nur Andi Putra
-
-//landing route
-Route::get('/', function () {
-    return view('landing');
-});
+Route::get('/', [LandingController::class, 'index']);
 Route::get('/formkonsultasi', function () {
     return view('form.form_konsultasi');
 });

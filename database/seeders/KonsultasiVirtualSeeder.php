@@ -16,7 +16,7 @@ class KonsultasiVirtualSeeder extends Seeder
     {
         $faker = Faker::create();
 
-        foreach (range(1, 5) as $index) {
+        foreach (range(1, 6) as $index) {
             DB::table('konsultasi_virtual')->insert([
                 'nama' => $faker->name,
                 'email' => $faker->email,
