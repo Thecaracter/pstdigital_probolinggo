@@ -31,12 +31,14 @@
         <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="landing/img/carousel-1.jpg" alt="Image">
+                    <img class="w-100" src="\foto/foto_1.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h5 class="text-white text-uppercase mb-3 animated slideInDown">PST DIGITAL</h5>
                             <h1 class="display-1 text-white mb-md-4 animated zoomIn">Badan Pusat Statistik Probolinggo
                             </h1>
+                            <a href="https://wa.me/+628883662780?text=nama saya rizqi"
+                                class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Katalog</a>
                             <a href="https://wa.me/+628883662780?text=Permisi admin,apakah saya bisa berkonsultasi dengan anda melalui wa"
                                 class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Chat
                                 Me</a>
@@ -67,13 +69,15 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="landing/img/carousel-2.jpg" alt="Image">
+                    <img class="w-100" src="foto/foto_2.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h5 class="text-white text-uppercase mb-3 animated slideInDown">PST DIGITAL
                             </h5>
                             <h1 class="display-1 text-white mb-md-4 animated zoomIn">Badan Pusat Statistik Probolinggo
                             </h1>
+                            <a href="https://wa.me/+628883662780?text=nama saya rizqi"
+                                class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Katalog</a>
                             <a href="https://wa.me/+628883662780?text=nama saya rizqi"
                                 class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Chat
                                 Me</a>
@@ -175,7 +179,7 @@
                 <div class="col-lg-5" style="min-height: 500px;">
                     <div class="position-relative h-100">
                         <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s"
-                            src="landing/img/about.jpg" style="object-fit: cover;">
+                            src="foto/animasi1.png">
                     </div>
                 </div>
             </div>
