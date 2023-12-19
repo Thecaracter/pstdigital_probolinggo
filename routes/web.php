@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\CatalogBukuController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\CatalogController;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\FormKonsultasiController;
@@ -23,6 +25,9 @@ Route::get('/', [LandingController::class, 'index']);
 Route::get('/formkonsultasi', function () {
     return view('form.form_konsultasi');
 });
+//catalog buku route
+Route::get('/catalog', [CatalogBukuController::class, 'index']);
+
 //login route
 Route::get('/masuk', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/masuk', [LoginController::class, 'login']);
@@ -39,7 +44,11 @@ Route::group(['middleware' => 'IsLogin'], function () {
     Route::get('/konsultasi', [KonsultasiVirtualController::class, 'index'])->name('konsultasi.index');
     Route::delete('/konsultasi/{id}', [KonsultasiVirtualController::class, 'destroy'])->name('konsultasi.destroy');
 
-
+    //route catalog admin
+    Route::get('/catalogadmin', [CatalogController::class, 'index'])->name('catalog.index');
+    Route::post('/catalogadmin', [CatalogController::class, 'store'])->name('catalog.store');
+    Route::delete('/catalogadmin/{id}', [CatalogController::class, 'destroy'])->name('catalog.destroy');
+    Route::put('/catalogadmin/{id}', [CatalogController::class, 'update'])->name('catalog.update');
     //logout route
     Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 });

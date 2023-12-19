@@ -14,7 +14,9 @@
             <li class="dropdown {{ Request::path() === 'konsultasi' ? 'active' : '' }}"><a class="nav-link"
                     href="/konsultasi"><i data-feather="video"></i><span>Konsultasi Online</span></a>
             </li>
-
+            <li class="dropdown {{ Request::path() === 'catalogadmin' ? 'active' : '' }}"><a class="nav-link"
+                    href="/catalogadmin"><i data-feather="book"></i><span>Catalog</span></a>
+            </li>
         </ul>
     </aside>
 </div>
