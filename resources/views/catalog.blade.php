@@ -5,7 +5,7 @@
 @section('content')
     <!-- Image and text -->
     <nav class="navbar navbar-light bg-primary">
-        <a class="navbar-brand" href="#" style="padding-left: 20px;">
+        <a class="navbar-brand" href="/" style="padding-left: 20px;">
             <img src="foto/logo_pst_putih.png" width="150" height="50" class="d-inline-block align-top" alt="">
         </a>
     </nav>
