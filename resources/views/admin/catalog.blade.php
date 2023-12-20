@@ -33,6 +33,7 @@
                                             <th class="text-center">Nama Buku</th>
                                             <th class="text-center">Deskripsi</th>
                                             <th class="text-center">Tahun Terbit</th>
+                                            <th class="text-center">Link Buku</th>
                                             <th class="text-center">Foto</th>
                                             <th class="text-center">Action</th>
                                         </tr>
@@ -44,6 +45,7 @@
                                                 <td class="text-center">{{ $catalog->nama_buku }}</td>
                                                 <td class="text-center">{{ $catalog->deskripsi }}</td>
                                                 <td class="text-center">{{ $catalog->tahun_terbit }}</td>
+                                                <td class="text-center">{{ $catalog->link }}</td>
                                                 <td class="align-middle text-center">
                                                     <!-- Add your action buttons (Edit, Delete) here -->
                                                     <button data-toggle="modal" data-target="#photoModal{{ $catalog->id }}"
@@ -147,6 +149,10 @@
                                     required>
                             </div>
                             <div class="form-group">
+                                <label for="link">Link Buku</label>
+                                <textarea class="form-control" id="link" name="link" rows="3" required></textarea>
+                            </div>
+                            <div class="form-group">
                                 <label for="foto">Foto</label>
                                 <input type="file" class="form-control-file" id="foto" name="foto" required>
                             </div>
@@ -191,6 +197,10 @@
                                     <label for="tahun_terbit">Tahun Terbit</label>
                                     <input type="text" class="form-control" id="tahun_terbit" name="tahun_terbit"
                                         value="{{ $catalog->tahun_terbit }}" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="link">Link Buku</label>
+                                    <textarea class="form-control" id="link" name="link" rows="3" required>{{ $catalog->link }}</textarea>
                                 </div>
                                 <div class="form-group">
                                     <label for="foto">Foto</label>

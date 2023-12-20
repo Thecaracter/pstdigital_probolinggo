@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="admin/assets/css/components.css">
     <!-- Custom style CSS -->
     <link rel="stylesheet" href="admin/assets/css/custom.css">
-    <link rel='shortcut icon' type='image/x-icon' href='admin/assets/img/favicon.ico' />
+    <link rel='shortcut icon' type='image/x-icon' href='foto/logo_pst_putih.png' />
 
     <!--jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>

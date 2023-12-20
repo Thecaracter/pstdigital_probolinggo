@@ -8,7 +8,7 @@
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
     <!-- App favicon -->
-    <link rel="shortcut icon" href="{{ URL::asset('login/assets/images/favicon.ico') }}">
+    <link rel="shortcut icon" href="{{ URL::asset('foto/logo_pst_putih.png') }}">
     @include('layout.head-css')
 </head>
 

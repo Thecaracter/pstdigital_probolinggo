@@ -38,6 +38,7 @@ class CatalogController extends Controller
                 'nama_buku' => 'required',
                 'deskripsi' => 'required',
                 'tahun_terbit' => 'required|numeric',
+                'link' => 'required',
                 'foto' => 'required|image|mimes:jpeg,png,jpg|max:2048',
             ]);
 
@@ -59,6 +60,7 @@ class CatalogController extends Controller
             $catalog->nama_buku = $request->input('nama_buku');
             $catalog->deskripsi = $request->input('deskripsi');
             $catalog->tahun_terbit = $request->input('tahun_terbit');
+            $catalog->link = $request->input('link');
             $catalog->foto = $path;
 
 
@@ -116,6 +118,7 @@ class CatalogController extends Controller
                 'nama_buku' => 'required',
                 'deskripsi' => 'required',
                 'tahun_terbit' => 'required|numeric',
+                'link' => 'required',
                 'foto' => 'image|mimes:jpeg,png,jpg|max:2048',
             ]);
 
@@ -126,6 +129,7 @@ class CatalogController extends Controller
             $catalog = Catalog::findOrFail($id);
             $catalog->nama_buku = $request->input('nama_buku');
             $catalog->deskripsi = $request->input('deskripsi');
+            $catalog->link = $request->input('link');
             $catalog->tahun_terbit = $request->input('tahun_terbit');
 
             // Check if a new photo is uploaded

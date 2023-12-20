@@ -15,6 +15,7 @@ return new class extends Migration {
             $table->string('nama_buku');
             $table->text('deskripsi');
             $table->string('tahun_terbit');
+            $table->text('link');
             $table->string('foto');
             $table->timestamps();
         });

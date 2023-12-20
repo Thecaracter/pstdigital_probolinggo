@@ -10,7 +10,7 @@
         </a>
     </nav>
     <br>
-    <div class="container">
+    <div class="container" style="padding-bottom: 100px;">
         <div class="row">
             <div class="col-sm-12 text-center">
                 <h1 class="text-primary">Catalog PST</h1>
@@ -32,10 +32,16 @@
                         <img class="card-img-top" src="{{ $catalog->foto }}" alt="{{ $catalog->title }}">
                         <div class="card-body">
                             <h5 class="card-title">{{ $catalog->nama_buku }}</h5>
-                            <p class="card-text">{{ $catalog->deskripsi }}</p>
+                            <p class="card-text">
+                                <span
+                                    class="description">{{ strlen($catalog->deskripsi) > 100 ? substr($catalog->deskripsi, 0, 100) . '...' : $catalog->deskripsi }}</span>
+                                @if (strlen($catalog->deskripsi) > 100)
+                                    <span class="more-text" style="display: none;">{{ $catalog->deskripsi }}</span>
+                                    <a href="#" class="read-more">Read More</a>
+                                @endif
+                            </p>
                             <p class="card-text">Release Date: {{ $catalog->tahun_terbit }}</p>
-                            <a href="https://probolinggokab.bps.go.id/publication.html" class="btn btn-primary">Read
-                                more</a>
+                            <a href="{{ $catalog->link }}" class="btn btn-primary">Kunjungi</a>
                         </div>
                     </div>
                 </div>
@@ -44,6 +50,20 @@
     </div>
 
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add event listener to "Read More" links
+            var readMoreLinks = document.querySelectorAll('.read-more');
+            readMoreLinks.forEach(function(link) {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    var moreText = this.previousElementSibling;
+                    moreText.style.display = (moreText.style.display === 'none' || moreText.style
+                        .display === '') ? 'inline' : 'none';
+                    this.innerText = (this.innerText === 'Read More') ? 'Read Less' : 'Read More';
+                });
+            });
+        });
+
         function searchCatalog() {
             var input, filter, cards, card, name, year, i;
             input = document.getElementById("searchInput");
@@ -63,4 +83,5 @@
             }
         }
     </script>
+
 @endsection
