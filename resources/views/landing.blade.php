@@ -29,7 +29,7 @@
                                 Probolinggo
                             </h1>
                             <a href="/catalog" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Katalog</a>
-                            <a href="https://wa.me/+628883662780?text=Permisi admin,apakah saya bisa berkonsultasi dengan anda melalui wa"
+                            <a href="https://wa.me/+628999310381?text=Permisi admin,apakah saya bisa berkonsultasi dengan anda melalui wa"
                                 class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Chat
                                 Me</a>
                             @if ($jumlahDataHariIni > 5)
@@ -68,7 +68,7 @@
                                 Probolinggo
                             </h1>
                             <a href="catalog" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Katalog</a>
-                            <a href="https://wa.me/+628883662780?text=nama saya rizqi"
+                            <a href="https://wa.me/+628999310381?text=Halo@admin"
                                 class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Chat
                                 Me</a>
                             @if ($jumlahDataHariIni > 5)
