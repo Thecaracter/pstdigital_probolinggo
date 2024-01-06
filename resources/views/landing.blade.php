@@ -206,8 +206,6 @@
                             <a class="btn btn-primary btn-square me-2"
                                 href="https://www.facebook.com/bpskabupaten.probolinggo.9?mibextid=rS40aB7S9Ucbxw6v"><i
                                     class="fab fa-facebook-f fw-normal"></i></a>
-                            <a class="btn btn-primary btn-square me-2" href="#"><i
-                                    class="fab fa-linkedin-in fw-normal"></i></a>
                             <a class="btn btn-primary btn-square"
                                 href="https://www.instagram.com/bpskabprobolinggo?igshid=OGQ5ZDc2ODk2ZA"><i
                                     class="fab fa-instagram fw-normal"></i></a>
