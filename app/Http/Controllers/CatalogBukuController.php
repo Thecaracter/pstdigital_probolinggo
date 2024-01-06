@@ -9,7 +9,7 @@ class CatalogBukuController extends Controller
 {
     public function index()
     {
-        $catalogs = Catalog::all();
+        $catalogs = Catalog::orderBy('tahun_terbit', 'asc')->get();
         return view('catalog', compact('catalogs'));
     }
 }
