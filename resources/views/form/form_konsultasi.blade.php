@@ -26,6 +26,23 @@
                                 </div>
 
                                 <div class="form-group">
+                                    <label for="instansi">Instansi</label>
+                                    <input id="instansi" type="text" class="form-control" name="instansi" required>
+                                    <div class="invalid-feedback"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="pekerjaan">Pekerjaan</label>
+                                    <select id="pekerjaan" class="form-control" name="pekerjaan" required>
+                                        <option value="Pekerjaan 1">Pekerjaan 1</option>
+                                        <option value="Pekerjaan 2">Pekerjaan 2</option>
+                                        <option value="Pekerjaan 3">Pekerjaan 3</option>
+                                        <!-- Tambahkan lebih banyak opsi sesuai kebutuhan -->
+                                    </select>
+                                    <div class="invalid-feedback"></div>
+                                </div>
+
+                                <div class="form-group">
                                     <label>No Whatsapp</label>
                                     <input type="text" class="form-control" pattern="[1-9][0-9]*"
                                         title="Masukkan no Whatsapp tanpa angka 0, Contohnya 8882731612" name="no_telp"

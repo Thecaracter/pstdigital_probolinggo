@@ -29,12 +29,11 @@
                             <h1 class="display-1 text-white mb-md-4 animated zoomIn">Badan Pusat Statistik Kabupaten
                                 Probolinggo
                             </h1>
-                            <a href="/catalog" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Katalog</a>
                             <a href="https://wa.me/+6281210003513?text=Permisi admin,apakah saya bisa berkonsultasi dengan anda melalui wa"
                                 class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Chat
                                 Me</a>
                             @if ($jumlahDataHariIni >= 5)
-                                <a href="#" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight"
+                                <a href="#" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
                                     onclick="handleKonsultasiClick()">
                                     Konsultasi Zoom
                                 </a>
@@ -51,11 +50,13 @@
                                     }
                                 </script>
                             @else
-                                <a href="/formkonsultasi"
-                                    class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">
+                                <a href="/formkonsultasi" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">
                                     Konsultasi Zoom
                                 </a>
                             @endif
+                            <a href="/catalog"
+                                class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Katalog</a>
+
                         </div>
                     </div>
                 </div>
@@ -68,12 +69,11 @@
                             <h1 class="display-1 text-white mb-md-4 animated zoomIn">Badan Pusat Statistik Kabupaten
                                 Probolinggo
                             </h1>
-                            <a href="catalog" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Katalog</a>
                             <a href="https://wa.me/+6281210003513?text=Permisi admin,apakah saya bisa berkonsultasi dengan anda melalui wa"
                                 class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Chat
                                 Me</a>
                             @if ($jumlahDataHariIni >= 5)
-                                <a href="#" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight"
+                                <a href="#" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
                                     onclick="handleKonsultasiClick()">
                                     Konsultasi Zoom
                                 </a>
@@ -85,16 +85,17 @@
                                             title: 'Pemberitahuan',
                                             text: 'Mohon maaf, daftar tunggu untuk konsultasi virtual telah penuh.',
                                             showConfirmButton: false,
-                                            timer: 3000
+                                            timer: 3000 // Tampilkan selama 3 detik
                                         });
                                     }
                                 </script>
                             @else
-                                <a href="/formkonsultasi"
-                                    class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">
+                                <a href="/formkonsultasi" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">
                                     Konsultasi Zoom
                                 </a>
                             @endif
+                            <a href="catalog"
+                                class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Katalog</a>
                         </div>
                     </div>
                 </div>

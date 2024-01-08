@@ -14,6 +14,8 @@ class FormKonsultasiController extends Controller
         $validator = Validator::make($request->all(), [
             'nama' => 'required|string|max:255',
             'email' => 'required|email|max:255',
+            'instansi' => 'required|string|max:255',
+            'pekerjaan' => 'required|string|max:255',
             'no_telp' => 'required|regex:/[1-9][0-9]*/', // Pastikan tidak ada angka 0 di depan nomor telepon
         ]);
 
@@ -26,15 +28,19 @@ class FormKonsultasiController extends Controller
         KonsultasiVirtual::create([
             'nama' => $request->input('nama'),
             'email' => $request->input('email'),
+            'instansi' => $request->input('instansi'),
+            'pekerjaan' => $request->input('pekerjaan'),
             'no_telp' => $request->input('no_telp'),
+            'status' => 1, // Set default status to 1
         ]);
+
         $notification = [
             'title' => 'Selamat Janji Telah Dibuat!',
             'text' => 'Data silahkan menunggu konfirmasi melalui WA dari admin',
             'type' => 'success',
         ];
+
         // Redirect ke halaman sukses atau tindakan lainnya
         return redirect()->back()->with('notification', $notification)->withInput();
     }
-
 }

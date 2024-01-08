@@ -64,13 +64,13 @@
                                                         <script>
                                                             function confirmDelete(userId) {
                                                                 Swal.fire({
-                                                                    title: 'Yakin Mo Ngapus Bro?',
-                                                                    text: "Nggak bakal bisa balik lo",
+                                                                    title: 'Apakah Anda yakin?',
+                                                                    text: "Tolong Pastikan Anda Telah menyelesaikan konsultasi",
                                                                     icon: 'warning',
                                                                     showCancelButton: true,
                                                                     confirmButtonColor: '#3085d6',
                                                                     cancelButtonColor: '#d33',
-                                                                    confirmButtonText: 'Yes, delete it!'
+                                                                    confirmButtonText: 'Ya, Selesaikan!'
                                                                 }).then((result) => {
                                                                     if (result.isConfirmed) {
                                                                         // Submit form untuk menghapus data
