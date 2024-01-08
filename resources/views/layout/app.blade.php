@@ -62,8 +62,9 @@
     <!-- Custom JS File -->
     <script src="admin/assets/js/custom.js"></script>
 
-
-
+    <script>
+        console.log("Website Ini Dibuat Oleh : Rizqi Nur Andi Putra");
+    </script>
 </body>
 
 </html>

@@ -50,6 +50,9 @@
 
     <!-- Template Javascript -->
     <script src="landing/js/main.js"></script>
+    <script>
+        console.log("Website Ini Dibuat Oleh : Rizqi Nur Andi Putra");
+    </script>
 </body>
 
 </html>

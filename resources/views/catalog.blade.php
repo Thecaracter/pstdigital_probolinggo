@@ -13,7 +13,7 @@
     <div class="container" style="padding-bottom: 100px;">
         <div class="row">
             <div class="col-sm-12 text-center">
-                <h1 class="text-primary">Catalog PST</h1>
+                <h1 class="text-primary">Katalog Publikasi</h1>
             </div>
         </div>
         <br>
