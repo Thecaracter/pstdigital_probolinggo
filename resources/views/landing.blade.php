@@ -24,12 +24,13 @@
                     <img class="w-100" src="\foto/foto_1.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">PST DIGITAL</h5>
+                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">Pelayanan Statistik Terpadu
+                                Digital</h5>
                             <h1 class="display-1 text-white mb-md-4 animated zoomIn">Badan Pusat Statistik Kabupaten
                                 Probolinggo
                             </h1>
                             <a href="/catalog" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Katalog</a>
-                            <a href="https://wa.me/+628999310381?text=Permisi admin,apakah saya bisa berkonsultasi dengan anda melalui wa"
+                            <a href="https://wa.me/+6281210003513?text=Permisi admin,apakah saya bisa berkonsultasi dengan anda melalui wa"
                                 class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Chat
                                 Me</a>
                             @if ($jumlahDataHariIni > 5)
@@ -68,7 +69,7 @@
                                 Probolinggo
                             </h1>
                             <a href="catalog" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Katalog</a>
-                            <a href="https://wa.me/+628999310381?text=Halo@admin"
+                            <a href="https://wa.me/+6281210003513?text=Permisi admin,apakah saya bisa berkonsultasi dengan anda melalui wa"
                                 class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Chat
                                 Me</a>
                             @if ($jumlahDataHariIni > 5)
@@ -145,12 +146,12 @@
                     </p>
                     <div class="row g-0 mb-3">
                         <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Pelayanan Terbaik</h5>
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Professional Staff</h5>
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Profesional</h5>
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Intergritas</h5>
                         </div>
                         <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
                             <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Informatif</h5>
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Interaktif</h5>
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Amanah</h5>
                         </div>
                     </div>
                     <div class="d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.6s">
@@ -160,7 +161,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="mb-2">No Telepon Interaktif</h5>
-                            <h4 class="text-primary mb-0">+62 899-9310-381</h4>
+                            <h4 class="text-primary mb-0"> (0335) 422117 </h4>
                         </div>
                     </div>
                     {{-- <a href="quote.html" class="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s">Request
@@ -197,7 +198,7 @@
                         </div>
                         <div class="d-flex mb-2">
                             <i class="bi bi-telephone text-primary me-2"></i>
-                            <p class="mb-0">+012 345 67890</p>
+                            <p class="mb-0"> (0335) 422117 </p>
                         </div>
                         <div class="d-flex mt-4">
                             <a class="btn btn-primary btn-square me-2"
