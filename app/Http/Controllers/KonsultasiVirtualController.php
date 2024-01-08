@@ -17,7 +17,7 @@ class KonsultasiVirtualController extends Controller
         $today = Carbon::today();
 
         // Ambil data KonsultasiVirtual hanya untuk hari ini
-        $konsultasi = KonsultasiVirtual::whereDate('created_at', $today)->get();
+        $konsultasi = KonsultasiVirtual::whereDate('created_at', $today)->where(['status' => 1])->get();
 
         return view('admin.konsultasi', compact('konsultasi'));
     }
@@ -65,15 +65,20 @@ class KonsultasiVirtualController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function update_status(string $id)
     {
         $konsultasiVirtual = KonsultasiVirtual::findOrFail($id);
-        $konsultasiVirtual->delete();
+
+        // Update the status to 2 instead of deleting
+        $konsultasiVirtual->update(['status' => 2]);
+
         $notification = [
             'title' => 'Selamat!',
-            'text' => 'Data pengguna berhasil dihapus',
+            'text' => 'Status pengguna berhasil diupdate',
             'type' => 'success',
         ];
+
         return redirect()->route('konsultasi.index')->with('notification', $notification)->withInput();
     }
+
 }

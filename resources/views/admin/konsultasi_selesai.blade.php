@@ -30,8 +30,6 @@
                                             <th class="text-center">No Telepon/WA</th>
                                             <th class="text-center">Instansi</th>
                                             <th class="text-center">Pekerjaan</th>
-                                            <th class="text-center">link</th>
-                                            <th class="text-center">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -44,43 +42,6 @@
                                                 <td class="text-center">{{ $konsul->no_telp }}</td>
                                                 <td class="text-center">{{ $konsul->instansi }}</td>
                                                 <td class="text-center">{{ $konsul->pekerjaan }}</td>
-                                                <td class="text-center">
-                                                    <button type="button" class="btn btn-primary kirim-link-button"
-                                                        data-phone="{{ $konsul->no_telp }}" data-toggle="modal"
-                                                        data-target="#linkModal">
-                                                        Kirim link
-                                                    </button>
-                                                </td>
-                                                <td class="align-middle text-center">
-                                                    <span>
-                                                        <form id="deleteForm-{{ $konsul->id }}" method="post"
-                                                            action="{{ route('konsultasi.update_status', $konsul->id) }}"
-                                                            style="display:inline">
-                                                            @csrf
-                                                            @method('POST')
-                                                            <button type="button" class="btn btn-info"
-                                                                onclick="confirmDelete('{{ $konsul->id }}')">Selesaikan</button>
-                                                        </form>
-                                                        <script>
-                                                            function confirmDelete(userId) {
-                                                                Swal.fire({
-                                                                    title: 'Yakin Mo Ngapus Bro?',
-                                                                    text: "Nggak bakal bisa balik lo",
-                                                                    icon: 'warning',
-                                                                    showCancelButton: true,
-                                                                    confirmButtonColor: '#3085d6',
-                                                                    cancelButtonColor: '#d33',
-                                                                    confirmButtonText: 'Yes, delete it!'
-                                                                }).then((result) => {
-                                                                    if (result.isConfirmed) {
-                                                                        // Submit form untuk menghapus data
-                                                                        document.getElementById('deleteForm-' + userId).submit();
-                                                                    }
-                                                                });
-                                                            }
-                                                        </script>
-                                                    </span>
-                                                </td>
                                         @endforeach
                                         </tr>
                                     </tbody>

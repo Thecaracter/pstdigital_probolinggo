@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CatalogBukuController;
+use App\Http\Controllers\KonsultasiSelesaiController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\CatalogController;
@@ -42,8 +43,10 @@ Route::group(['middleware' => 'IsLogin'], function () {
 
     //konsultasi route
     Route::get('/konsultasi', [KonsultasiVirtualController::class, 'index'])->name('konsultasi.index');
-    Route::delete('/konsultasi/{id}', [KonsultasiVirtualController::class, 'destroy'])->name('konsultasi.destroy');
+    Route::post('/konsultasi/{id}', [KonsultasiVirtualController::class, 'update_status'])->name('konsultasi.update_status');
 
+    //konsultasi selesai route
+    Route::get('/konsultasiselesai', [KonsultasiSelesaiController::class, 'index'])->name('konsultasi_selesai');
     //route catalog admin
     Route::get('/catalogadmin', [CatalogController::class, 'index'])->name('catalog.index');
     Route::post('/catalogadmin', [CatalogController::class, 'store'])->name('catalog.store');

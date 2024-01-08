@@ -14,7 +14,10 @@ return new class extends Migration {
             $table->id();
             $table->string('nama');
             $table->string('email');
+            $table->string('instansi');
+            $table->string('pekerjaan');
             $table->string('no_telp', 20);
+            $table->integer('status')->default('1');
             $table->timestamps();
         });
     }

@@ -33,10 +33,10 @@
                             <a href="https://wa.me/+6281210003513?text=Permisi admin,apakah saya bisa berkonsultasi dengan anda melalui wa"
                                 class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Chat
                                 Me</a>
-                            @if ($jumlahDataHariIni > 5)
+                            @if ($jumlahDataHariIni >= 5)
                                 <a href="#" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight"
                                     onclick="handleKonsultasiClick()">
-                                    Konsultasi Virtual
+                                    Konsultasi Zoom
                                 </a>
                                 <script>
                                     function handleKonsultasiClick() {
@@ -53,7 +53,7 @@
                             @else
                                 <a href="/formkonsultasi"
                                     class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">
-                                    Konsultasi Virtual
+                                    Konsultasi Zoom
                                 </a>
                             @endif
                         </div>
@@ -72,10 +72,10 @@
                             <a href="https://wa.me/+6281210003513?text=Permisi admin,apakah saya bisa berkonsultasi dengan anda melalui wa"
                                 class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Chat
                                 Me</a>
-                            @if ($jumlahDataHariIni > 5)
+                            @if ($jumlahDataHariIni >= 5)
                                 <a href="#" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight"
                                     onclick="handleKonsultasiClick()">
-                                    Konsultasi Virtual
+                                    Konsultasi Zoom
                                 </a>
                                 <script>
                                     function handleKonsultasiClick() {
@@ -85,14 +85,14 @@
                                             title: 'Pemberitahuan',
                                             text: 'Mohon maaf, daftar tunggu untuk konsultasi virtual telah penuh.',
                                             showConfirmButton: false,
-                                            timer: 3000 // Tampilkan selama 3 detik
+                                            timer: 3000
                                         });
                                     }
                                 </script>
                             @else
                                 <a href="/formkonsultasi"
                                     class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">
-                                    Konsultasi Virtual
+                                    Konsultasi Zoom
                                 </a>
                             @endif
                         </div>
