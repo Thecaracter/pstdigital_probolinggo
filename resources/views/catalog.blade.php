@@ -17,6 +17,15 @@
             </div>
         </div>
         <br>
+        <div class="form-group">
+            <label for="selectedYear">Pilih Tahun Terbit:</label>
+            <select class="form-control form-control-sm" name="selectedYear" id="selectedYear" onchange="filterByYear()">
+                @foreach ($uniqueYears as $year)
+                    <option value="{{ $year }}">{{ $year }}</option>
+                @endforeach
+            </select>
+        </div>
+        <br>
         <div class="input-group">
             <input type="search" class="form-control rounded" id="searchInput" placeholder="Search by name or year"
                 aria-label="Search" aria-describedby="search-addon" oninput="searchCatalog()" />
@@ -82,6 +91,21 @@
                 }
             }
         }
-    </script>
 
+        function filterByYear() {
+            var selectedYear = document.getElementById("selectedYear").value.toUpperCase();
+            var cards = document.getElementsByClassName("catalog-card");
+
+            for (var i = 0; i < cards.length; i++) {
+                var card = cards[i];
+                var year = card.getAttribute("data-year").toUpperCase();
+
+                if (selectedYear === "ALL" || year === selectedYear) {
+                    card.style.display = "";
+                } else {
+                    card.style.display = "none";
+                }
+            }
+        }
+    </script>
 @endsection

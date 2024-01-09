@@ -29,6 +29,7 @@ class CatalogSeeder extends Seeder
                 'nama_buku' => $faker->sentence(3),
                 'deskripsi' => $faker->paragraph(4),
                 'tahun_terbit' => $faker->year,
+                'link' => $faker->url, // Tambahkan field 'link' sesuai dengan migration
                 'foto' => $image_url,
                 'created_at' => now(),
                 'updated_at' => now(),
