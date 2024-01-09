@@ -14,6 +14,7 @@
             <a href="/" class="navbar-brand p-0">
                 <!-- Replace the icon with an image -->
                 <img src="foto/logo_pst_putih.png" alt="PST" width="100" height="50" class="m-0">
+                <img src="foto/logo_bps.png" alt="PST" width="250" height="50" class="m-2">
             </a>
         </nav>
 
@@ -21,7 +22,7 @@
         <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="\foto/foto_1.jpg" alt="Image">
+                    <img class="w-100" src="\foto/foto_1.png" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h5 class="text-white text-uppercase mb-3 animated slideInDown">Pelayanan Statistik Terpadu
@@ -61,7 +62,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="foto/foto_2.jpg" alt="Image">
+                    <img class="w-100" src="foto/foto_2.png" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h5 class="text-white text-uppercase mb-3 animated slideInDown">PST DIGITAL
