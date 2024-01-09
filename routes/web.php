@@ -40,6 +40,7 @@ Route::group(['middleware' => 'IsLogin'], function () {
 
     //dashboard route
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard.index');
+    Route::get('/dashboard/getData', [DashboardController::class, 'getData'])->name('dashboard.getData');
 
     //konsultasi route
     Route::get('/konsultasi', [KonsultasiVirtualController::class, 'index'])->name('konsultasi.index');
