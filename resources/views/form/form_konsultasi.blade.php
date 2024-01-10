@@ -38,6 +38,17 @@
                                 </div>
 
                                 <div class="form-group">
+                                    <label for="tujuan">Tujuan</label>
+                                    <select id="tujuan" class="form-control" name="tujuan" required>
+                                        <option value="Tujuan 1">Tujuan 1</option>
+                                        <option value="Tujuan 2">Tujuan 2</option>
+                                        <option value="Tujuan 3">Tujuan 3</option>
+                                        <!-- Tambahkan opsi tujuan lainnya sesuai kebutuhan -->
+                                    </select>
+                                    <div class="invalid-feedback"></div>
+                                </div>
+
+                                <div class="form-group">
                                     <label>No Whatsapp</label>
                                     <input type="text" class="form-control" pattern="[1-9][0-9]*"
                                         title="Masukkan no Whatsapp tanpa angka 0, Contohnya 8882731612" name="no_telp"

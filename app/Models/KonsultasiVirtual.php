@@ -9,5 +9,5 @@ class KonsultasiVirtual extends Model
 {
     use HasFactory;
     protected $table = 'konsultasi_virtual';
-    protected $fillable = ['nama', 'email', 'no_telp', 'instansi', 'pekerjaan', 'status'];
+    protected $fillable = ['nama', 'email', 'no_telp', 'instansi', 'pekerjaan', 'status', 'tujuan'];
 }

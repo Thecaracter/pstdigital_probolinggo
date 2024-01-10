@@ -30,6 +30,7 @@
                                             <th class="text-center">No Telepon/WA</th>
                                             <th class="text-center">Instansi</th>
                                             <th class="text-center">Pekerjaan</th>
+                                            <th class="text-center">Tujuan</th>
                                             <th class="text-center">link</th>
                                             <th class="text-center">Action</th>
                                         </tr>
@@ -44,6 +45,7 @@
                                                 <td class="text-center">{{ $konsul->no_telp }}</td>
                                                 <td class="text-center">{{ $konsul->instansi }}</td>
                                                 <td class="text-center">{{ $konsul->pekerjaan }}</td>
+                                                <td class="text-center">{{ $konsul->tujuan }}</td>
                                                 <td class="text-center">
                                                     <button type="button" class="btn btn-primary kirim-link-button"
                                                         data-phone="{{ $konsul->no_telp }}" data-toggle="modal"

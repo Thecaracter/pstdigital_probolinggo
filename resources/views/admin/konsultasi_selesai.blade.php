@@ -30,6 +30,7 @@
                                             <th class="text-center">No Telepon/WA</th>
                                             <th class="text-center">Instansi</th>
                                             <th class="text-center">Pekerjaan</th>
+                                            <th class="text-center">Tujuan</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -42,6 +43,7 @@
                                                 <td class="text-center">{{ $konsul->no_telp }}</td>
                                                 <td class="text-center">{{ $konsul->instansi }}</td>
                                                 <td class="text-center">{{ $konsul->pekerjaan }}</td>
+                                                <td class="text-center">{{ $konsul->tujuan }}</td>
                                         @endforeach
                                         </tr>
                                     </tbody>

@@ -20,8 +20,9 @@ class KonsultasiVirtualSeeder extends Seeder
             DB::table('konsultasi_virtual')->insert([
                 'nama' => $faker->name,
                 'email' => $faker->email,
-                'instansi' => $faker->company, // Add a random company name for 'instansi'
-                'pekerjaan' => $faker->jobTitle, // Add a random job title for 'pekerjaan'
+                'instansi' => $faker->company,
+                'pekerjaan' => $faker->jobTitle,
+                'tujuan' => $faker->sentence, // Added a random sentence for 'tujuan'
                 'no_telp' => $faker->phoneNumber,
                 'created_at' => now(),
                 'updated_at' => now(),

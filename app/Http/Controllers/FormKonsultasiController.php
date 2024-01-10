@@ -17,6 +17,7 @@ class FormKonsultasiController extends Controller
             'instansi' => 'required|string|max:255',
             'pekerjaan' => 'required|string|max:255',
             'no_telp' => 'required|regex:/[1-9][0-9]*/', // Pastikan tidak ada angka 0 di depan nomor telepon
+            'tujuan' => 'required|string|max:255', // Validasi untuk kolom tujuan
         ]);
 
         // Jika validasi gagal, kembalikan dengan pesan kesalahan
@@ -31,6 +32,7 @@ class FormKonsultasiController extends Controller
             'instansi' => $request->input('instansi'),
             'pekerjaan' => $request->input('pekerjaan'),
             'no_telp' => $request->input('no_telp'),
+            'tujuan' => $request->input('tujuan'), // Ambil nilai dari input 'tujuan'
             'status' => 1, // Set default status to 1
         ]);
 
