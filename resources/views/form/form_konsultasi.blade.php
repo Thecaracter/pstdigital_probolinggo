@@ -33,12 +33,7 @@
 
                                 <div class="form-group">
                                     <label for="pekerjaan">Pekerjaan</label>
-                                    <select id="pekerjaan" class="form-control" name="pekerjaan" required>
-                                        <option value="Pekerjaan 1">Pekerjaan 1</option>
-                                        <option value="Pekerjaan 2">Pekerjaan 2</option>
-                                        <option value="Pekerjaan 3">Pekerjaan 3</option>
-                                        <!-- Tambahkan lebih banyak opsi sesuai kebutuhan -->
-                                    </select>
+                                    <input id="pekerjaan" type="text" class="form-control" name="pekerjaan" required>
                                     <div class="invalid-feedback"></div>
                                 </div>
 
