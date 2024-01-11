@@ -38,7 +38,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="tujuan">Tujuan</label>
+                                    <label for="tujuan">Pilihan Konsultasi</label>
                                     <select id="tujuan" class="form-control" name="tujuan" required>
                                         <option value="Sosial dan Kependudukan">Sosial dan Kependudukan</option>
                                         <option value="Ekonomi dan Perdagangan">Ekonomi dan Perdagangan</option>
