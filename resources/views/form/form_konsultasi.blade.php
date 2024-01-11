@@ -40,9 +40,9 @@
                                 <div class="form-group">
                                     <label for="tujuan">Tujuan</label>
                                     <select id="tujuan" class="form-control" name="tujuan" required>
-                                        <option value="Tujuan 1">Tujuan 1</option>
-                                        <option value="Tujuan 2">Tujuan 2</option>
-                                        <option value="Tujuan 3">Tujuan 3</option>
+                                        <option value="Sosial dan Kependudukan">Sosial dan Kependudukan</option>
+                                        <option value="Ekonomi dan Perdagangan">Ekonomi dan Perdagangan</option>
+                                        <option value="Pertanian dan Pertambangan">Pertanian dan Pertambangan</option>
                                         <!-- Tambahkan opsi tujuan lainnya sesuai kebutuhan -->
                                     </select>
                                     <div class="invalid-feedback"></div>
