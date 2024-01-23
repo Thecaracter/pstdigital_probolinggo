@@ -51,8 +51,8 @@ class CatalogController extends Controller
             if ($request->hasFile('foto')) {
                 $foto = $request->file('foto');
                 $fileName = time() . '.' . $foto->getClientOriginalExtension();
-                $foto->move(public_path('uploads'), $fileName);
-                $path = 'uploads/' . $fileName;
+                $foto->move(public_path('uploadsfoto'), $fileName);
+                $path = 'uploadsfoto/' . $fileName;
             }
 
 
@@ -142,8 +142,8 @@ class CatalogController extends Controller
                 // Upload and save the new photo
                 $foto = $request->file('foto');
                 $fileName = time() . '.' . $foto->getClientOriginalExtension();
-                $foto->move(public_path('uploads'), $fileName);
-                $catalog->foto = 'uploads/' . $fileName;
+                $foto->move(public_path('uploadsfoto'), $fileName);
+                $catalog->foto = 'uploadsfoto/' . $fileName;
             }
 
             $catalog->save();
